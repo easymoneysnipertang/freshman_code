@@ -1,0 +1,74 @@
+------Cin测试------
+输入：第一行是通过cin构建的字典单词总数n。接下来n行是字典中的单词。n+2行是待分词的字符串s。
+输出：向字符串s插入空格分词，可能构成的所有句子。
+
+测试样例1：
+输入：
+5
+apple
+pen
+applepen
+pine
+pineapple
+pineapplepenapple
+输出:
+pine apple pen apple
+pineapple pen apple
+pine applepen apple
+
+测试样例2：
+输入：
+4
+dog
+and
+cat
+cats
+sand
+catsanddog
+输出：
+cats and dog
+cat sand dog
+
+测试样例3：
+输入：
+3
+a
+aa
+aaa
+aaaaaa
+输出：
+a a a a a
+a a a aa
+a a aa a
+a a aaa
+a aa a a
+a aa aa
+a aaa a
+aa a a a
+aa a aa
+aa aa a
+aa aaa
+aaa a a
+aaa aa
+
+
+------File测试------
+在文件中原始构建了1300个单词的dictionary
+输入：待分词字符串s。
+输出：向字符串s插入空格分词，可能构成的所有句子。
+
+测试样例1：
+输入：
+pineapplepenapple
+输出：
+pine apple pen apple
+pine applepen apple
+pineapple pen apple
+
+测试样例2：
+输入：
+catsanddog
+输出：
+cat sand dog
+cats and dog
+
